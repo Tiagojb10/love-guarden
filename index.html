@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You, My Love ✿</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel+Decorative:wght@400&family=EB+Garamond:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Intro screen -->
+  <div class="intro" id="intro">
+    <div class="intro-inner">
+      <div class="intro-symbol">✿</div>
+      <h1 class="intro-title">For You</h1>
+      <p class="intro-sub">a garden made of love</p>
+      <button class="enter-btn" id="enterBtn">open the garden</button>
+    </div>
+  </div>
+
+  <!-- Main garden -->
+  <main class="garden-scene" id="gardenScene">
+    <header class="garden-header">
+      <span class="header-symbol">✿</span>
+      <h2 class="garden-title">Our Garden</h2>
+      <p class="garden-hint">touch a flower to open it</p>
+    </header>
+
+    <div class="flowers-grid" id="flowersGrid">
+      <!-- Flowers injected by JS -->
+    </div>
+
+    <footer class="garden-footer">
+      <p>made with <span class="heart-beat">♥</span> just for you</p>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-card" id="modalCard">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <div class="modal-label" id="modalLabel"></div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="flowers.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
